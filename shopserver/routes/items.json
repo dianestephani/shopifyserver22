@@ -1,4 +1,4 @@
-"items" : [
+{"items" : [
     {
       "name": "spearow",
       "quantity": "https://pokeapi.co/api/v2/pokemon/21/"
@@ -14,8 +14,10 @@
     {
       "name": "arbok",
       "quantity": "https://pokeapi.co/api/v2/pokemon/24/"
-    },
+    }
 ]
+
+}
 
 
 
