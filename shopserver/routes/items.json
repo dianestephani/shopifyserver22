@@ -1,21 +1,22 @@
-{"items" : [
+{
+  "items" : [
     {
       "name": "spearow",
-      "quantity": "https://pokeapi.co/api/v2/pokemon/21/"
+      "quantity": "1"
     },
     {
       "name": "fearow",
-      "quantity": "https://pokeapi.co/api/v2/pokemon/22/"
+      "quantity": "2"
     },
     {
       "name": "ekans",
-      "quantity": "https://pokeapi.co/api/v2/pokemon/23/"
+      "quantity": "3"
     },
     {
       "name": "arbok",
-      "quantity": "https://pokeapi.co/api/v2/pokemon/24/"
+      "quantity": "4"
     }
-]
+  ]
 
 }
 

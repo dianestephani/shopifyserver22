@@ -1,14 +1,21 @@
 var express = require('express');
 var router = express.Router();
+// const itemList = require ('./items.json');
 
 //This file will have the routes
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  // res.render('index', { title: 'Express' });
-  res.send('Responding to home route call')
-});
+// router.get('/', function(req, res) {
+//   // res.render('index', { title: 'Express' });
+//   res.send(itemList);
+// });
 
 
 
-module.exports = router;
+module.exports = (router) => {
+  router
+    .get("/", (req, res) => res.send("GET"))
+    .post("/", (req, res) => res.send("POST"));
+
+  return router;
+};
