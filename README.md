@@ -24,11 +24,9 @@ The user can view all current inventory for their store on the home page. Each i
 - Microsoft Visual Studio Code
 - Node.js
 - Express
-- MongoDB
 - React
-- Bootstrap
-- Cors
-- Fetch
+- Postman
+
 
 ---------------------------------
 
