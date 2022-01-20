@@ -7,12 +7,6 @@ const cors = require('cors');
 
 const app = express();
 
-// const itemList = require ('./routes/items.json');
-
-// const indexRouter = require('./routes/index');
-// const usersRouter = require('./routes/users');
-// const testAPIRouter = require('./routes/testAPI');
-
 
 //Listener for testing
 app.listen( () => {
@@ -32,10 +26,6 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-//routes
-// app.use('/', indexRouter);
-// app.use('/users', usersRouter);
-// app.use('/testAPI', testAPIRouter);
 
 //GET method to view items on the home page
 app.get('/', (req, res) => {
@@ -44,17 +34,18 @@ app.get('/', (req, res) => {
 
 //POST method to add new items to inventory list
 app.post('/', (req, res) => {
-  console.log(req.body);
-  const newItem = req.body;
+  // console.log(req.body);
+  let newItem = req.body;
   items.push(newItem);
+  console.log(items);
   res.status(201).send('creating post request')
 })
 
 
 //Inventory items
 const items = [
-  { name: 'Grey Goose', quantity: 2 }, 
-  { name: 'Don Julio', quantity: 1 }
+  { name: 'Grey Goose', quantity: '2' }, 
+  { name: 'Don Julio', quantity: '1' }
 ]
 
 // catch 404 and forward to error handler
